@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Home Section */
+        #home {
+            color: black;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+
+        #home h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        #home p {
+            font-size: 1.5em;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* About Section */
+        #about {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #about h2 {
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Skills Section */
+        #skills {
+            background: #f4f4f4;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #skills h2 {
+            margin-bottom: 20px;
+        }
+
+        #skills .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 5px;
+            text-align: center;
+            width: 150px;
+            transition: transform 0.3s;
+        }
+
+        .skill:hover {
+            transform: scale(1.1);
+        }
+
+        /* Portfolio Section */
+        #portfolio {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #portfolio h2 {
+            margin-bottom: 20px;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .project {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+         .project h3 {
+            margin: 10px 0 5px;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: #333;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #contact h2 {
+            margin-bottom: 20px;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px auto;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            display: block;
+            font-size: 16px;
+        }
+
+        form button {
+            background: #f39c12;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        form button:hover {
+            background: #e67e22;
+        }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <h1>Hello, This is SHIVANI</h1>
+        <p>A Student pursuing Master's degree in Information Technology.
+           I have a strong foundation in computer science principles, data structures, and algorithms.
+           During my studies, I have focused on areas like machine learning, artificial intelligence, and web development.
+           I am currently seeking internships or freelance opportunities to gain further industry experience.
+           Alongside my technical skills, I am a strong communicator, quick to adapt to new challenges, and enjoy collaborating with others.
+           I am a lifelong learner, always excited about exploring new technologies and trends in the IT industry.
+           My goal is to leverage my technical expertise to contribute to innovations that positively impact society.
+           </p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hi there! I am a creative professional skilled in Programming. I enjoy solving challenges with innovative ideas and take pride in creating meaningful and impactful experiences.I enjoy approaching problems from multiple angles and designing innovative solutions that are both efficient and impactful.I prefer working with others, sharing ideas, and learning from different people to build great products.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">PYTHON</div>
+            <div class="skill">J2EE</div>
+            <div class="skill">IOT</div>
+        </div>
+         <div class="Unique talents">
+        <h3>Unique talents</h3>
+        <ul>
+             <br>✮ Pencil art
+             <br>✮ Creative thinking
+             <br>✮ Problem solving skills
+             <br>✮ Mehandi Artist
+             <br>✮ Cooking
+             <br>✮ Hair dressing
+                   </ul>
+
+      <div class="achievements">
+        <h3>Achievements</h3>
+        <ul>
+             <br>✮ Participated in debugging competition at American college and secured 3rd price.
+             <br>✮ Completed basics of python programming organised by Klexe Robotics with 4/5 points.
+             <br>✮ Completed course on communicating with impact voice processing organised by ICT academy.
+                   </ul>
+    </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="projects">
+            <div class="project">
+                   <h3>OIL AND GAS PREDICTION USING MACHINE LANGUAGE</h3>
+                <p>Description of Project :<br><br>
+Role: conducting Exploratory Data Analysis (EDA) on the Bank Client Attributes and Marketing Outcomes dataset. <br>
+Project Description: Leveraged historical data and machine learning to forecast production trends, driving smarter exploration strategies.  <br>
+Impact: Improved decision-making, reduced operational risks, and enhanced efficiency in resource allocation for sustainable growth.  </p>
+</div>
+          <div class="project">
+            <h3>MINI PROJECT ON EXPLORATORY DATA ANALYSIS</h3>
+                <p>Description of Project :<br><br>
+Role: Developed machine learning models, processed data, and optimized algorithms for accurate oil and gas production predictions.  <br>
+Project Description: This project dives deep into a rich dataset of bank clients and their responses to marketing campaigns.  <br>
+Impact: By analyzing client attributes, the project helps tailor marketing efforts to the most promising customer segments, increasing the effectiveness of future campaigns.  </p>
+           </div>
+          <div class="project">
+            <h3>MINI PROJECT ON SMART IRRIGATION SYSTEM USING IOT IN TINKERCAD</h3>
+                <p>Description of Project :<br><br>
+Role: Designed and developed an automated irrigation system using IoT and Arduino to monitor environmental conditions and optimize watering schedules. <br>
+Project Description: Created a smart irrigation system that utilizes sensors (soil moisture, temperature, water flow) to deliver precise, real-time watering, ensuring optimal plant growth while conserving water.  <br>
+Impact: Reduces water waste, lowers costs, and promotes sustainable farming practices by providing efficient irrigation solutions based on real-time data.  </p>
+           </div>
+
+         </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="SHIVANI.N.G" required>
+            <input type="email" placeholder="23pite16@ldc.edu.in" required>
+            <input type="text" placeholder="8807681943" required>
+         </form>
+    </section>
+    </body>
+</html>
